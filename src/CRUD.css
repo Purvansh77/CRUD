@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px 380px 10px 380px;
+    background-color: #bd9e76;
+    color: #333;
+    /* display: flex; */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;    /* Center content vertically */
+    margin-top: 100px;
+}
+
+/* Resizable Box Container */
+.container {
+    background-color: #ffffff;
+    padding: 60px; /* Increased padding for more content spacing */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Bigger shadow for emphasis */
+    width: 100%; /* Ensures full width usage */
+    max-width: 1200px; /* Large width for the container */
+    min-height: 700px; /* Taller height for the container */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Form Styles */
+input {
+    width: 100%;
+    padding: 15px; /* Increased padding for better usability */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 30px;
+}
+.age{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+/* button start */
+.delete {
+    padding: 15px 30px; /* Bigger buttons for better interaction */
+    background-color: #cf0b0b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger button text */
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.delete:hover {
+    background-color: red;
+}
+
+.delete:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.edit {
+    padding: 15px 30px; /* Bigger buttons for better interaction */
+    background-color: #5a4933;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger button text */
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.edit:hover {
+    background-color: #473c2d;
+}
+
+.edit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.save {
+    padding: 15px 30px; /* Bigger buttons for better interaction */
+    background-color: #5a4933;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger button text */
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.save:hover {
+    background-color: #473c2d;
+}
+
+.save:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* button end */
+
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 18px; /* Larger table font */
+}
+
+thead {
+    background-color: #978062;
+    color: white;
+}
+
+th,
+td {
+    padding: 20px; /* Bigger padding for table cells */
+    text-align: left;
+    border: 2px solid black;
+}
+
+/* tr:nth-child(even) {
+    background-color: #f9f9f9;
+} */
+
+tr:hover {
+    background-color: #978062;
+}
+
+/* Validation Error Styles */
+.validation-error {
+    color: red;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Popup Styles */
+.swal2-popup {
+    font-size: 18px !important;
+}
+
+.boxstyle{
+    background-color: burlywood;
+    padding: 50px; 
+    border-radius: 10px;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):not([disabled]){
+    cursor: pointer;
+    background-color: #7c5f39;
+}
+.swal2-input{
+    color: #000;
+    background-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        min-height: 500px; /* Adjust height for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons for mobile */
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+}
